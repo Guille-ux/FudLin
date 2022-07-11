@@ -1,7 +1,6 @@
 import os
 import sys
 import time
-import base64
 
 print(" ______________ _________________   ___       ___ _________       ")
 print("|   _    |     Y     |      _  . \ |   |     |   |     _    \     ")
@@ -17,7 +16,6 @@ print("   [ 1 ] Bashload (Bash) (NEW) ")
 print("   [ 2 ] NetBot (Python3) (NEW) ")
 print("   [ 3 ] exit")
 opt = input("[FUDWIN]--> ")
-os.chdir("payload")
 if opt == 1:
   os.system("python3 bashloader.py")
 elif opt == 2:
