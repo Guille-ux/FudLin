@@ -14,12 +14,12 @@ print("    Select a option to begin. ")
 print("")
 print("   [ 1 ] Bashload (Bash) (NEW) ")
 print("   [ 2 ] NetBot (Python3) (NEW) ")
-print("   [ 3 ] exit")
+print("   [ 3 ] exit \n")
 opt = input("[FUDWIN]--> ")
 os.chdir("payloads")
-if opt == 1:
+if opt == "1":
   os.system("python3 bashloader.py")
-elif opt == 2:
+elif opt == "2":
   os.system("python3 nbot.py")
 else:
   sys.exit()
