@@ -15,7 +15,7 @@ print("")
 print("   [ 1 ] Bashload (Bash) (NEW) ")
 print("   [ 2 ] NetBot (Python3) (NEW) ")
 print("   [ 3 ] exit \n")
-opt = input("[FUDWIN]--> ")
+opt = input("[FUDLIN]--> ")
 os.chdir("payloads")
 if opt == "1":
   os.system("python3 bashloader.py")
