@@ -1,6 +1,6 @@
 import os
 import time
-impor base64
+import base64
 
 os.chdir("../output/")
 time.sleep(0.5)
