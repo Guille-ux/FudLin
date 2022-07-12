@@ -2,6 +2,7 @@ import os
 import time
 impor base64
 
+os.chdir("../output/")
 time.sleep(0.5)
 opt = input("LHOST: ")
 opt2 = input("LPORT: ")
