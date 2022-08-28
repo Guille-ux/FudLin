@@ -7,4 +7,5 @@ mv bashloader.py payloads
 cd ..
 hast='pwd'
 cd
-echo hast=$hast; alias 'fudlin'='cd $hast; python3 FudLin.py' >> .bashrc
+echo hast=$hast >> .bashrc
+echo alias 'fudlin'='cd $hast; python3 FudLin.py' >> .bashrc
