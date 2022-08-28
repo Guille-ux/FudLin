@@ -1,5 +1,5 @@
 # FudLin
-image["fudlin.png"]
+(https://raw.githubusercontent.com/Guille-ux/FudLin/main/FudLin.png)
 a payload creator for linux.
 |--------------------------|
 | is for ethical use only  |
